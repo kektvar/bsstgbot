@@ -18,12 +18,15 @@ def status_pc():
 
 def onmacros():
     pg.press('f1')
+    time.sleep(0.5)
 
 def pausemacros():
     pg.press('f2')
+    time.sleep(0.5)
 
 def offmacros():
     pg.press('f3')
+    time.sleep(0.5)
 
 load_dotenv()
 bot = tb.TeleBot(os.getenv('BOT_TOKEN'))
