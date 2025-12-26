@@ -61,13 +61,16 @@ def commandscheck(message):
 @bot.message_handler(commands=['onmacro'])
 def on_macros(message):
     bot.reply_to(message, 'macro enabled')
+    onmacros()
 
 @bot.message_handler(commands=['offmacro'])
 def off_macros(message):
     bot.reply_to(message, 'macro disabled')
+    offmacros()
 
 @bot.message_handler(commands=['pausemacro'])
 def pause_macros(message):
     bot.reply_to(message, 'macro paused')
+    pausemacros()
 
 bot.infinity_polling()
