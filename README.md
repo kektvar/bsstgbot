@@ -1,3 +1,4 @@
+Guide to download
 1. open powershell
 2. 'pip install -r requirements.txt'
 3. create telegram bot in botfather
